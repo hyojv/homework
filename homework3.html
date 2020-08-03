@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Webpage Title -->
+    <title>나홀로 쇼핑몰</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+
+    <style type="text/css">
+        .wrap {
+            width: 700px;
+            margin: auto;
+        }
+
+        .img {
+            background-image: url("http://permeal.co.kr/data/goods/67/2015/07/634_tmp_60ed8d0be716d5adb9c238f88dbe70645346large.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 700px;
+            height: 550px;
+            margin-bottom: 50px;
+
+
+        }
+        .order {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 100px;
+        }
+
+
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.');
+
+        }
+    </script>
+
+</head>
+
+
+<body>
+
+<div class="wrap">
+
+    <div class="img"></div>
+    <div class="info">
+       <h1>초당옥수수</h1>
+
+        <h5>가격 : 20,000원 / 10개</h5>
+
+        <p>한 입 깨물면 풍부하고 달콤한 과즙이 빵빵!
+            옥수수 중 가장 달콤한 초당옥수수는 껍질만 벗겨 생으로 먹으면 16Brix 이상의 기분 좋은 아삭한 달콤함을 맛볼 수 있어요. 특히 알맹이 껍질이 얇고 부드러워 이유식, 아이들 간식으로 좋아요.
+        </p>
+        <h1>주문하기</h1>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" id="order-name">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text">수량</label>
+            </div>
+            <select class="custom-select" id="order-count">
+                <option selected value=""> -- 수량을 선택하세요 --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">주소</span>
+            </div>
+            <input type="text" class="form-control" id="order-address">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">전화번호</span>
+            </div>
+            <input type="text" class="form-control" id="order-phone">
+        </div>
+        <div class="order">
+            <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+        </div>
+    </div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
